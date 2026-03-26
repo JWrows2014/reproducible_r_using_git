@@ -2,8 +2,5 @@
 
 data(mtcars)
 
-# Take a look at the mtcars data
-View(mtcars)
-
 library(tidyverse)
 mtcars %>% group_by(cyl) %>% summarise(mean_mpg=mean(mpg))
